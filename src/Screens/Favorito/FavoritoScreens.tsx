@@ -1,10 +1,10 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { View, Text } from 'react-native'
 
-export default function ProdutoScreens() {
+export default function FavoritoScreens() {
   return (
     <View style={{flex:1, justifyContent: 'center',alignItems:'center'}}>
-      <Text>produto</Text>
+      <Text>Favorito</Text>
     </View>
   )
 }
