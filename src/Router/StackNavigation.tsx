@@ -1,9 +1,9 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Button } from 'react-native';
-import HomeScreens from '../Screens/Home/HomeScreens';
-import ProdutoScreens from '../Screens/Produto/ProdutoScreens';
-import FavoritoScreens from '../Screens/Favorito/FavoritoScreens';
+import HomeScreens from '../Screens/Home/HomeScreen';
+import ProdutoScreens from '../Screens/Produto/ProdutoScreen';
+import FavoritoScreens from '../Screens/Favorito/FavoritoScreen';
 import BottomTabs from './BottomTabs';
 
 const Stack = createNativeStackNavigator();

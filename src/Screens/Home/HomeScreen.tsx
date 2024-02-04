@@ -11,7 +11,9 @@ import { CoffeeItem } from '../../Components/ItemComponents/CoffeeItem'
 export default function HomeScreens() {
 
   function renderItem({item} : ListRenderItemInfo<PropsCaffee>) {
-    return <CoffeeItem {...item}/>
+    return (
+      <CoffeeItem {...item}/> 
+    )
   }
   
   return (

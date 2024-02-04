@@ -90,7 +90,7 @@ export const CoffeeList:PropsCaffee[] = [
   {
     name: "Cappuccino",
     image: require('../Assets/Cappuccino/Cappuccino6.png'),
-    desc: 'Um cappuccino é uma combinação de espresso e leite em um copo com uma camada de crema ou sumo.',
+    desc: 'Um cappuccino é uma combinação de espresso e leite em um copo com uma camada de crema ou sumo...',
     volume: 90,
     stars: 4.9,
    categoria: 1,
@@ -100,7 +100,7 @@ export const CoffeeList:PropsCaffee[] = [
   {
     name: 'Espresso',
     image: require('../Assets/Espresso/Espresso1.png'),
-    desc: 'O espresso é uma forma concentrada de café italiano, preparado por extração rápida e sob pressão de água quente através de grãos finamente moídos. Caracterizado por seu sabor intenso, encorpado e uma fina camada de crema.',
+    desc: 'O espresso é uma forma concentrada de café italiano, preparado por extração rápida e sob pressão...',
     volume: 30,
     stars: 5,
    categoria: 2,
@@ -110,7 +110,7 @@ export const CoffeeList:PropsCaffee[] = [
   {
     name: 'Espresso',
     image: require('../Assets/Espresso/Espresso2.png'),
-    desc: 'O espresso é uma forma concentrada de café italiano, preparado por extração rápida e sob pressão de água quente através de grãos finamente moídos. Caracterizado por seu sabor intenso, encorpado e uma fina camada de crema.',
+    desc: 'O espresso é uma forma concentrada de café italiano, preparado por extração rápida e sob pressão...',
     volume: 30,
     stars: 4,
    categoria: 2,
@@ -120,7 +120,7 @@ export const CoffeeList:PropsCaffee[] = [
   {
     name: 'Espresso',
     image: require('../Assets/Espresso/Espresso3.png'),
-    desc: 'O espresso é uma forma concentrada de café italiano, preparado por extração rápida e sob pressão de água quente através de grãos finamente moídos. Caracterizado por seu sabor intenso, encorpado e uma fina camada de crema.',
+    desc: 'O espresso é uma forma concentrada de café italiano, preparado por extração rápida e sob pressão...',
     volume: 70,
     stars: 3.9,
    categoria: 2,
@@ -130,7 +130,7 @@ export const CoffeeList:PropsCaffee[] = [
   {
     name: 'Espresso',
     image: require('../Assets/Espresso/Espresso4.png'),
-    desc: 'O espresso é uma forma concentrada de café italiano, preparado por extração rápida e sob pressão de água quente através de grãos finamente moídos. Caracterizado por seu sabor intenso, encorpado e uma fina camada de crema.',
+    desc: 'O espresso é uma forma concentrada de café italiano, preparado por extração rápida e sob pressão...',
     volume: 50,
     stars: 5,
    categoria: 2,
@@ -140,7 +140,7 @@ export const CoffeeList:PropsCaffee[] = [
   {
     name: 'Espresso',
     image: require('../Assets/Espresso/Espresso5.png'),
-    desc: 'O espresso é uma forma concentrada de café italiano, preparado por extração rápida e sob pressão de água quente através de grãos finamente moídos. Caracterizado por seu sabor intenso, encorpado e uma fina camada de crema.',
+    desc: 'O espresso é uma forma concentrada de café italiano, preparado por extração rápida e sob pressão...',
     volume: 30,
     stars: 5,
    categoria: 2,
@@ -150,7 +150,7 @@ export const CoffeeList:PropsCaffee[] = [
   {
     name: 'Espresso',
     image: require('../Assets/Espresso/Espresso6.png'),
-    desc: 'O espresso é uma forma concentrada de café italiano, preparado por extração rápida e sob pressão de água quente através de grãos finamente moídos. Caracterizado por seu sabor intenso, encorpado e uma fina camada de crema.',
+    desc: 'O espresso é uma forma concentrada de café italiano, preparado por extração rápida e sob pressão...',
     volume: 55,
     stars: 4.9,
    categoria: 2,
@@ -161,7 +161,7 @@ export const CoffeeList:PropsCaffee[] = [
   {
     name: 'Latte',
     image: require('../Assets/Latte/Latte.png'),
-    desc: 'Latte é Feito com espresso e leite vaporizado, o latte é reconhecido pela sua textura cremosa e sabor suave. Geralmente, a proporção é de um terço de espresso para dois terços de leite vaporizado.',
+    desc: 'Latte é Feito com espresso e leite vaporizado, o latte é reconhecido pela sua textura cremosa e sabor suave.',
     volume: 90,
     stars: 4.3,
    categoria: 3,
@@ -171,7 +171,7 @@ export const CoffeeList:PropsCaffee[] = [
   {
     name: 'Latte',
     image: require('../Assets/Latte/Latte2.png'),
-    desc: 'Latte é Feito com espresso e leite vaporizado, o latte é reconhecido pela sua textura cremosa e sabor suave. Geralmente, a proporção é de um terço de espresso para dois terços de leite vaporizado.',
+    desc: 'Latte é Feito com espresso e leite vaporizado, o latte é reconhecido pela sua textura cremosa e sabor suave.',
     volume: 90,
     stars: 4.8,
    categoria: 3,
@@ -181,7 +181,7 @@ export const CoffeeList:PropsCaffee[] = [
   {
     name: 'Latte',
     image: require('../Assets/Latte/Latte3.png'),
-    desc: 'Latte é Feito com espresso e leite vaporizado, o latte é reconhecido pela sua textura cremosa e sabor suave. Geralmente, a proporção é de um terço de espresso para dois terços de leite vaporizado.',
+    desc: 'Latte é Feito com espresso e leite vaporizado, o latte é reconhecido pela sua textura cremosa e sabor suave.',
     volume: 90,
     stars: 4.9,
    categoria: 3,
@@ -191,7 +191,7 @@ export const CoffeeList:PropsCaffee[] = [
   {
     name: 'Latte',
     image: require('../Assets/Latte/Latte4.png'),
-    desc: 'Latte é Feito com espresso e leite vaporizado, o latte é reconhecido pela sua textura cremosa e sabor suave. Geralmente, a proporção é de um terço de espresso para dois terços de leite vaporizado.',
+    desc: 'Latte é Feito com espresso e leite vaporizado, o latte é reconhecido pela sua textura cremosa e sabor suave.',
     volume: 90,
     stars: 4.8,
    categoria: 3,
@@ -248,14 +248,5 @@ export const CoffeeList:PropsCaffee[] = [
     valor: 10.50,
     id: 22,
   },
-  {
-    name: "Mocha",
-    image: require("../Assets/Mocha/Mocha6.png"),
-    desc: 'O Mocha é uma bebida da família Espresso, mas com a adição do chocolate ao longo do leite.',
-    volume: 350,
-    stars: 4.9,
-   categoria: 4,
-    valor: 7.80,
-    id: 23,
-  },
+
 ]
