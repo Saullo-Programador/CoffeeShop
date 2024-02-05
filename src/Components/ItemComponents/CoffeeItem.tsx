@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   img:{
     width: '100%',
     height: '100%',
-    borderRadius: 12,
+    borderRadius: 20,
   },
   title:{
     fontSize: 22,
@@ -63,7 +63,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row', 
     justifyContent: 'center', 
     alignItems: 'center',
-    paddingLeft: 5,
+    paddingLeft: 3,
     paddingTop: 5,
+    backgroundColor: '#2221216f',
+    width: 70,
+    height: 30,
+    borderTopLeftRadius: 20,
+    borderBottomRightRadius: 20,
   }
 })

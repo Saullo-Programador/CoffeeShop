@@ -9,6 +9,7 @@ import { CoffeeItem } from '../../Components/ItemComponents/CoffeeItem'
 
 
 export default function HomeScreens() {
+  const use = require('../../Assets/Avatar/user.png');
 
   function renderItem({item} : ListRenderItemInfo<PropsCaffee>) {
     return (
@@ -19,14 +20,14 @@ export default function HomeScreens() {
   return (
     <Container>
       <Header>
-        <Usuario name={'Saullo Paulo'}/>
+        <Usuario name={'Saullo Paulo'} avata={use}/>
         <SearchInput/>
       </Header>
       <Nav>
         <Categoria/>
       </Nav>
       <Main>
-       <Container style={{marginLeft:5}}>
+       <Container style={{marginLeft:5}} animation="fadeInUp" delay={200}>
           <FlatList 
             showsVerticalScrollIndicator={false}
             keyExtractor={(item) => item.id.toString()}

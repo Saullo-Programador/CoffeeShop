@@ -3,7 +3,7 @@ import React from 'react'
 import { LogBox, Platform, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import IconHome from 'react-native-vector-icons/Foundation'
-import { FavoritoNavigation, HomeNavigation } from './StackNavigation';
+import { CarrinhoNavigation, FavoritoNavigation, HomeNavigation } from './StackNavigation';
 import { View } from 'react-native';
 
 const Tab = createBottomTabNavigator()
@@ -32,7 +32,7 @@ export default function BottomTabs() {
                 size={32}
                 color={focused ? '#C67C4E' : '#6D6D6D'}
               />
-              {focused ? <View style={styles.Ativado}></View>: null}
+              {focused ? <View style={styles.Ativado}></View> : null}
             </>
           ),
         }}
@@ -48,7 +48,23 @@ export default function BottomTabs() {
                 size={30}
                 color={ focused ? '#C67C4E' : '#6D6D6D'}
               />
-               {focused ? <View style={styles.Ativado}></View>: null}
+               {focused ? <View style={styles.Ativado}></View> : null}
+            </>
+          )
+        }}
+      />
+      <Tab.Screen
+        name='CarrinhoTab'
+        component={CarrinhoNavigation}
+        options={{
+          tabBarIcon:({ focused }) =>(
+            <>
+              <Icon
+                name='shopping-cart'
+                size={30}
+                color={focused ? '#C67C4E' : '#6D6D6D'}
+              />
+              {focused ? <View style={styles.Ativado}></View> : null }
             </>
           )
         }}

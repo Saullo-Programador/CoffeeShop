@@ -1,6 +1,7 @@
 import styled from "styled-components/native";
+import * as Animatable from 'react-native-animatable' 
 
-export const Container = styled.View`
+export const Container = styled(Animatable.View)`
   width: 100%;
   height: 100%;
   justify-content: center;

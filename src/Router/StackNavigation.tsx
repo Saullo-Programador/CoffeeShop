@@ -1,20 +1,23 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Button } from 'react-native';
 import HomeScreens from '../Screens/Home/HomeScreen';
-import ProdutoScreens from '../Screens/Produto/ProdutoScreen';
+import ProdutoScreen from '../Screens/Produto/ProdutoScreen';
 import FavoritoScreens from '../Screens/Favorito/FavoritoScreen';
 import BottomTabs from './BottomTabs';
+import CarrinhoScreen from '../Screens/Carrinho/CarrinhoScreen';
+import { Welcome } from '../Screens/Welcome/welcomeScreen';
 
 const Stack = createNativeStackNavigator();
 
 const AppNavigator: React.FC = () => (
   <Stack.Navigator 
-    initialRouteName='Home'
+    initialRouteName='Welcome'
     screenOptions={{headerShown: false}}
     >
+    <Stack.Screen name='Welcome' component={Welcome}/>
     <Stack.Screen name="Home" component={BottomTabs}/>
-    <Stack.Screen name="Produto" component={ProdutoScreens}/>
+    <Stack.Screen name="Produto" component={ProdutoScreen}/>
+    <Stack.Screen name='Pedido' component={CarrinhoNavigation}/>
   </Stack.Navigator>
 );
 
@@ -33,3 +36,8 @@ export const FavoritoNavigation: React.FC = () => (
   </Stack.Navigator>
 );
 
+export const CarrinhoNavigation: React.FC = () =>(
+  <Stack.Navigator screenOptions={{ headerShown: false }}>
+    <Stack.Screen name='Carrinho' component={CarrinhoScreen}/>
+  </Stack.Navigator>
+)

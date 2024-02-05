@@ -1,25 +1,28 @@
 import { useNavigation } from '@react-navigation/native'
 import React, { useState } from 'react'
-import { View, Text, SafeAreaView, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
+import { View, Text, SafeAreaView, TouchableOpacity, StyleSheet } from 'react-native'
 import { PropsCaffee } from '../../Constants/Data';
 import Icon from 'react-native-vector-icons/AntDesign'
 import { Image } from 'react-native';
 import { Button } from '../../Components/ButtonComponents/Button';
 import { BoxGlobalProduto, BoxHeaderShownProduto, BoxImgProduto, ContainerProduto, FooterProduto } from './StyledProduto';
 
-interface ProdutoProps{
+import * as Animatable from 'react-native-animatable' 
+
+export interface ProdutoProps{
   route:{
     params: PropsCaffee
   }
 }
 
-
-const ProdutoScreens: React.FC<ProdutoProps>= ({route}) => {
+const ProdutoScreen: React.FC<ProdutoProps> = ({ route }: ProdutoProps) => {
   const {
     image,
     name,
     stars,
     valor,
+    id,
+    categoria,
     desc,
     volume,
   } = route.params;
@@ -36,7 +39,7 @@ const ProdutoScreens: React.FC<ProdutoProps>= ({route}) => {
     setTimeout(() => {
       setLoading(false)
     }, 500);
-    
+    navigation.navigate('Pedido')
   }
 
   function handleStateChange(){
@@ -59,7 +62,7 @@ const ProdutoScreens: React.FC<ProdutoProps>= ({route}) => {
             <Icon name={ favorito ? 'heart' : 'hearto'} size={26}  color={ favorito ? '#ff0000' : '#000000'}/>
           </TouchableOpacity>
         </BoxHeaderShownProduto>
-        <BoxImgProduto>
+        <BoxImgProduto animation="flipInY">
           <Image source={image} style={styles.img}/>
         </BoxImgProduto>
         <BoxGlobalProduto>
@@ -84,12 +87,12 @@ const ProdutoScreens: React.FC<ProdutoProps>= ({route}) => {
           <Text style={styles.Dec}>{desc}</Text>
         </BoxGlobalProduto>
 
-        <FooterProduto>
+        <Animatable.View style={FooterProduto.footer} animation="fadeInUp" delay={500} >
           <View style={{width: '25%', height:'85%', justifyContent: 'center', paddingLeft: 15, }}>
             <Text style={styles.titleValor}>Valor:</Text>
             <Text style={styles.valor}>$ {valor}</Text>
           </View>
-          <View style={{width: '70%', height:'85%', justifyContent: 'center', alignItems: 'center',}}>
+          <View style={{width: '70%', height:'70%', justifyContent: 'center', alignItems: 'center',}}>
             <Button 
               title={'Compre Agora'} 
               isLoading={loading}
@@ -97,7 +100,7 @@ const ProdutoScreens: React.FC<ProdutoProps>= ({route}) => {
               iconName='shoppingcart'
             />
           </View>
-        </FooterProduto>
+        </Animatable.View>
       </ContainerProduto>
     </View>
   )
@@ -144,4 +147,4 @@ const styles = StyleSheet.create({
     color: "#C67C4E"
   },
 })
-export default ProdutoScreens;
+export default ProdutoScreen;
