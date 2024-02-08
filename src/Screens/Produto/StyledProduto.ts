@@ -6,7 +6,7 @@ export const ContainerProduto = styled.SafeAreaView`
   flex: 1;
   align-items: center;
 `;
-export const BoxHeaderShownProduto = styled.View`
+export const BoxHeaderShown = styled.View`
   width: 90%;
   justify-content: space-between;
   align-items: center;
@@ -37,16 +37,3 @@ export const FooterProduto = StyleSheet.create({
     gap: 25,
   },
 })
-
-// width: '100%',
-// marginTop: 10,
-// height: 17%;
-// background-color: #F1F1F1;
-// padding-left: 12px;
-// padding-right: 12px;
-// flex-direction: row;
-// justify-content: space-around;
-// align-items: center;
-// border-top-right-radius: 24px;
-// border-top-left-radius: 24px;
-// gap: 25px;

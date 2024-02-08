@@ -15,7 +15,7 @@ export const ContainerImg = styled.View`
   border-radius: 14px;
 `
 
-export const Boxicon = styled.View`
+export const Boxicon = styled.TouchableOpacity`
   width: 40px;
   height: 40px;
   justify-content: center;

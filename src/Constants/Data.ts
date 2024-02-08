@@ -1,5 +1,4 @@
 import { ImageProps } from "react-native";
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
  export interface PropsCategoria{
   categoria : number;
@@ -7,6 +6,10 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 }
 
 export const categories:PropsCategoria[] = [
+  {
+    categoria: 0,
+    title: "todos",
+  },
   {
    categoria: 1,
     title: "Cappuccino",
@@ -27,7 +30,7 @@ export const categories:PropsCategoria[] = [
 
 export interface PropsCaffee{
   name: string;
-  image: any;
+  image: ImageProps["source"];
   desc: string;
   volume: number;
   stars: number;

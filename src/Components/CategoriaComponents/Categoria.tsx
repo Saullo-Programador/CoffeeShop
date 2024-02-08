@@ -3,7 +3,7 @@ import { FlatList, ListRenderItemInfo, StyleSheet, Text, TouchableOpacity, View 
 import { PropsCategoria, categories } from '../../Constants/Data';
 
 export default function Categoria() {
-  const [activeCategory, setActiveCategory] = useState<number>(1);
+  const [activeCategory, setActiveCategory] = useState<number>(0);
   return (
     <View style={styles.categoriesContainer}>
       <FlatList

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { Boxicon, CarContainer, ContainerImg } from './StyledItem'
 import { Image } from 'react-native'
@@ -8,6 +8,11 @@ import Star from 'react-native-vector-icons/FontAwesome'
 import { useNavigation } from '@react-navigation/native'
 
 export function CoffeeItem({image, name, stars, valor, categoria, desc, volume, id}:PropsCaffee) {
+
+  const [addCarinho, setAddcarrinho] = useState(false);
+  function handleAddCar(){
+    setAddcarrinho((prevAddCarrinho) => !prevAddCarrinho)
+  }
 
   const navigation = useNavigation();
   return (
@@ -26,8 +31,8 @@ export function CoffeeItem({image, name, stars, valor, categoria, desc, volume, 
       <Text style={styles.title}>{name}</Text>
       <View style={styles.BoxFooter}>
         <Text style={styles.TextValor}>$ {valor}</Text>
-        <Boxicon>
-          <Icon name="plus"size={25} color='#FFFFFF'/>
+        <Boxicon onPress={handleAddCar}>
+          <Icon name={addCarinho ? "minus" : 'plus' }size={25} color='#FFFFFF'/>
         </Boxicon>
       </View>
     </CarContainer>

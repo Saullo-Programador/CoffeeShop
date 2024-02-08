@@ -11,32 +11,40 @@ import { CoffeeItem } from '../../Components/ItemComponents/CoffeeItem'
 export default function HomeScreens() {
   const use = require('../../Assets/Avatar/user.png');
 
-  function renderItem({item} : ListRenderItemInfo<PropsCaffee>) {
+  function renderItem({ item }: ListRenderItemInfo<PropsCaffee>) {
     return (
-      <CoffeeItem {...item}/> 
+      <CoffeeItem {...item} />
     )
   }
-  
-  return (
-    <Container>
-      <Header>
-        <Usuario name={'Saullo Paulo'} avata={use}/>
-        <SearchInput/>
-      </Header>
-      <Nav>
-        <Categoria/>
-      </Nav>
-      <Main>
-       <Container style={{marginLeft:5}} animation="fadeInUp" delay={200}>
-          <FlatList 
-            showsVerticalScrollIndicator={false}
-            keyExtractor={(item) => item.id.toString()}
-            data={CoffeeList}
-            renderItem={renderItem}
-            numColumns={2}
-          />
-        </Container>
-      </Main>
-    </Container>
-  )
+  try {
+    return (
+      <Container>
+        <Header>
+          <Usuario name={'Saullo Paulo'} avata={use} />
+          <SearchInput />
+        </Header>
+        <Nav>
+          <Categoria />
+        </Nav>
+        <Main>
+          <Container style={{ marginLeft: 5 }} animation="fadeInUp" delay={200}>
+            <FlatList
+              showsVerticalScrollIndicator={false}
+              keyExtractor={(item) => item.id.toString()}
+              data={CoffeeList}
+              renderItem={renderItem}
+              numColumns={2}
+            />
+          </Container>
+        </Main>
+      </Container>
+    );
+  } catch (error) {
+    console.error("Error na HomeScreen", error)
+    return (
+      <View>
+        <Text>Ocorreu um erro. Por favor, tente novamente mais tarde.</Text>
+      </View>
+    )
+  }
 }
